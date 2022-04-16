@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Loopstudios landing page</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
+      overflow-y: auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .header {
+      background-image: url(./images/desktop/image-hero.jpg);
+      height: 650px;
+      width: 100vw;
+      background-repeat: no-repeat;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 90px 160px;
+    }
+
+    ul {
+      padding: 0;
+    }
+
+    ul li {
+      display: inline-block;
+      margin: 0px;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: white;
+      margin: 0 15px;
+      font-family: Alata;
+      font-weight: 400;
+    }
+
+    .deliver {
+      border: 2px solid white;
+      width: 650px;
+      height: 275px;
+      margin-left: 165px;
+    }
+
+    .deliver p {
+      color: white;
+      padding: 0 40px;
+      text-transform: uppercase;
+      font-size: 60px;
+      font-family: Josefin Sans;
+    }
+
+    body>.content {
+      overflow: visible;
+      position: relative;
+    }
+
+    .content img {
+      margin-left: 165px;
+      margin-top: 160px;
+      width: 725px;
+    }
+
+    .leader {
+      position: absolute;
+      height: 375px;
+      width: 640px;
+      top: 340px;
+      right: 127px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .leader .content {
+      height: 215px;
+      width: 445px;
+
+
+    }
+
+    .leader .title {
+      font-family: Josefin Sans;
+      text-transform: uppercase;
+      font-size: 45px;
+    }
+
+    .leader .desc {
+      font-family: Alata;
+      font-size: 15px;
+      color: hsl(0, 0%, 41%);
+    }
+    .creations {
+      position: relative;
+      top: 80px;
+      width: 1100px;
+      left: 165px;
+    }
+
+    .creations .caption {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-transform: uppercase;
+      font-family: Josefin Sans;
+      font-size: 32px;
+    }
+
+    .btn {
+      width: 155px;
+      height: 40px;
+      border: 1px solid;
+      font-size: 15px;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    .gallery {
+      position: relative;
+      float: left;
+      top: 80px;
+      width: 80vw;
+      overflow: auto;
+    }
+
+    .gallery img {
+      width: 255px;
+      margin: 0;
+    }
+
+    .card {
+      display: inline-block;
+      position: relative;
+      width: 255px;
+      margin: 15px;
+    }
+
+    .card p {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      color: white;
+      font-size: 22px;
+      width: 160px;
+      margin: 40px 35px;
+      font-family: Josefin Sans;
+      text-transform: uppercase;
+    }
+    .footer {
+      height: 160px;
+      background-color: hsl(0, 0%, 0%);
+      position: relative;
+      bottom: -200px;
+    }
+
+    .map {
+      float: left;
+      width: 415px;
+      height: 70px;
+      margin-left: 165px;
+      margin-top: 45px;
+    }
+
+    .copyright {
+      float: right;
+      width: 375px;
+      height: 70px;
+      margin: 45px 165px;
+    }
+
+    .copyright div {
+      height: 40px;
+      color: rgb(109, 109, 109);
+      font-family: Alata;
+    }
+    .copyright div p{
+      float: right;
+    }
+    .top img{
+      float: right;
+      margin: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="navbar">
+      <div class="title">
+        <img src="./images/logo.svg" alt="">
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Events</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="deliver">
+      <p>Immersive experiences that deliver</p>
+    </div>
+  </div>
+  <div class="content">
+    <img src="./images/desktop/image-interactive.jpg" alt="">
+    <div class="leader">
+      <div class="content">
+        <p class="title">The leader in interactive VR</p>
+        <p class="desc"> Founded in 2011, Loopstudios has been producing world-class virtual reality
+          projects for some of the best companies around the globe. Our award-winning
+          creations have transformed businesses through digital experiences that bind
+          to their brand.</p>
+      </div>
+    </div>
+    <div class="creations">
+      <div class="caption">
+        <div>
+          <p class="title">Our creations</p>
+        </div>
+        <div class="btn">
+          <p>See all</p>
+        </div>
+
+
+      </div>
+      <div class="gallery" id="gallery">
+
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="map">
+      <ul>
+        <li><a href="">About</a></li>
+        <li><a href="">Careers</a></li>
+        <li><a href="">Events</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Support</a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <div class="top">
+        <img src="./images/icon-facebook.svg" alt="">
+        <img src="./images/icon-twitter.svg" alt="">
+        <img src="./images/icon-pinterest.svg" alt="">
+        <img src="./images/icon-instagram.svg" alt="">
+      </div>
+      <div class="bottom">
+        <p>© 2021 Loopstudios. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+  <!-- 
+    
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Uchqunov Samandar</a>.
+  </div>
+   -->
+  <script>
+    let data = [
+      {
+        title: "Deep earth",
+        imgUrl: "./images/desktop/image-deep-earth"
+      },
+      {
+        title: "Night arcade",
+        imgUrl: "./images/desktop/image-night-arcade"
+      },
+      {
+        title: "Soccer team VR",
+        imgUrl: "./images/desktop/image-soccer-team"
+      },
+      {
+        title: "The grid",
+        imgUrl: "./images/desktop/image-grid"
+      },
+      {
+        title: "From up above VR",
+        imgUrl: "./images/desktop/image-from-above"
+      },
+      {
+        title: "Pocket borealis",
+        imgUrl: "./images/desktop/image-pocket-borealis"
+      },
+      {
+        title: "The curiosity",
+        imgUrl: "./images/desktop/image-curiosity"
+      },
+      {
+        title: "Make it fisheye",
+        imgUrl: "./images/desktop/image-fisheye"
+      }
+    ]
+    let gallery = document.getElementById("gallery");
+    window.onload = () => {
+      data.forEach(item => {
+        gallery.innerHTML += `
+        <div class="card">
+          <img src="${item.imgUrl}.jpg" width="255" alt="${item.title}">
+          <p>${item.title}</p>
+        </div>
+        `
+      })
+      console.log(gallery)
+    }
+
+  </script>
+</body>
+
+</html>
